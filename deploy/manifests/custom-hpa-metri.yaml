@@ -1,0 +1,32 @@
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscale
+metadata:
+  name: horizontal-pod-autoscaler
+spec:
+  scaleTargetRef:
+    apiVersion: extensions/v1beta1
+    kind: #
+    name: #
+  minReplicas: #
+  maxReplicas: #
+  metrics:
+  - type: External
+    external:
+      metricName: #
+      metricSelector:
+        matchLabels:
+            host: #
+            key: #
+            cluster-name: #
+  - type: Object
+    object:
+      metricName: #
+      target:
+        apiVersion: extensions/v1beta1
+        kind: #
+        name: #
+      targetValue: #
+
+
+
+  
